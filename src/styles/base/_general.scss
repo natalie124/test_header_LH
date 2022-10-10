@@ -1,0 +1,91 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #252525;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+
+a {
+  color: inherit;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    text-decoration: underline solid transparent;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+button {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+*:focus {
+  outline: none;
+}
+
+/*=== GRID ===*/
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+footer {
+  width: 100%;
+  margin-top: auto;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media (max-width: 767px) {
+    padding: 0 10px;
+  }
+}
+
+/*=== CONTENT ===*/
+
+img.lazyload {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+img.lazyloaded {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+

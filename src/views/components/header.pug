@@ -1,0 +1,101 @@
+header.header
+	.container
+		.header__top
+			a.header__logo(href="index.html" title="Магазин инструмента")
+				+svg-nl('logo', 210, 134)
+			.header__content
+				.header__content-top
+					button.menu-toggler.menu-toggler--top.js-top-menu-toggler(type="button" title="Meню")
+						span
+					ul.header__site-nav.site-nav.js-top-menu
+						li.site-nav__item
+							a.site-nav__link(href="#") Каталог инструментов
+						li.site-nav__item
+							a.site-nav__link(href="#") Все для сада
+						li.site-nav__item
+							a.site-nav__link(href="#") Ручной интрумент
+						li.site-nav__item
+							a.site-nav__link(href="#") Электрика
+						li.site-nav__item
+							a.site-nav__link(href="#") Доставка
+						li.site-nav__item
+							a.site-nav__link(href="#") Оплата
+						li.site-nav__item
+							a.site-nav__link(href="#") О нас
+
+					ul.header__site-nav.site-nav.site-nav--auth
+						li.site-nav__item
+							a.site-nav__link(href="#") Вход
+						li.site-nav__item
+							a.site-nav__link(href="#") Регистрация
+				.header__content-bottom
+					.header__descriptor
+						+picture-nl('placeholder', 'jpg', 253, 70)
+					ul.header__cart-nav.cart-nav
+						li.cart-nav__item.cart-nav__item--cart
+							a.cart-nav__link(href="#")
+								span.cart-nav__icon
+									+icon('cart', 19, 18)
+								| <span class="cart-nav__num">3</span> шт. / <span> 17 250</span> р.
+						li.cart-nav__item
+							a.cart-nav__link(href="#")
+								span.cart-nav__icon
+									+icon('star', 14, 14)
+								| Избранное (<span class="cart-nav__num">7</span>)
+						li.cart-nav__item
+							a.cart-nav__link(href="#")
+								span.cart-nav__icon
+									+icon('compare', 18, 16)
+								| К сравнению (<span class="cart-nav__num">5</span>)
+					.header__goods.header-goods.js-header-goods-slider
+						.header-goods__container.js-slider-container
+							ul.header-goods__list.swiper-wrapper
+								li.header-goods__item.swiper-slide
+									a.header-goods__link(href="#" title="Товар 1")
+										+picture-nl('good-1', 'png', 70, 70)
+								li.header-goods__item.swiper-slide
+									a.header-goods__link(href="#" title="Товар 2")
+										+picture-nl('good-2', 'png', 70, 70)
+								li.header-goods__item.swiper-slide
+									a.header-goods__link(href="#" title="Товар 3")
+										+picture-nl('good-3', 'png', 70, 70)
+								li.header-goods__item.swiper-slide
+									a.header-goods__link(href="#" title="Товар 1")
+										+picture-nl('good-1', 'png', 70, 70)
+								li.header-goods__item.swiper-slide
+									a.header-goods__link(href="#" title="Товар 2")
+										+picture-nl('good-2', 'png', 70, 70)
+								li.header-goods__item.swiper-slide
+									a.header-goods__link(href="#" title="Товар 3")
+										+picture-nl('good-3', 'png', 70, 70)
+					.header__contacts.header-contacts
+						p.header-contacts__hours Время работы: <span>10:00 — 19:00</span>
+						a.header-contacts__phone(href="tel:84957212525") 8 495 721-25-25
+						.header-contacts__region
+							span Москва
+							button(type="button") Сменить
+		nav.header__nav.header-nav
+			button.header-nav__search(type="button" title="Поиск")
+				+icon('loupe', 24, 24)
+			ul.header__cat.header-cat.js-header-cat
+				li.header-cat__item.current
+					a.header-cat__link(href="#") Перфораторы
+				li.header-cat__item
+					a.header-cat__link(href="#") Дрели
+				li.header-cat__item
+					a.header-cat__link(href="#") Шлифмашины
+				li.header-cat__item
+					a.header-cat__link(href="#") Пистолеты
+				li.header-cat__item
+					a.header-cat__link(href="#") Электропилы
+				li.header-cat__item
+					a.header-cat__link(href="#") Наборы инструментов
+				li.header-cat__item
+					a.header-cat__link(href="#") Акксесуары
+				li.header-cat__item.header-cat__item--dd.js-header-cat-dd
+					button.header-cat__toggler.menu-toggler.js-header-cat-toggler(type="button" title="Меню")
+						span
+					ul.header-cat__dropdown-menu.js-header-cat-dropdown
+			a.header-nav__sale(href="#") 
+				span Распродажа
+				
