@@ -12,7 +12,7 @@ mixin svg(src, width, height)
 
 mixin picture-nl(src, ext, width, height)
   picture
-    source(data-srcset='img/' + src + '.webp' type="image/webp")
+    source(srcset='img/' + src + '.webp' type="image/webp")
     img(src=('img/' + src + '.' + ext) alt='image' width=width height=height)
 
 mixin svg-nl(src, width, height)
